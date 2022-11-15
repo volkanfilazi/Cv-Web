@@ -1,0 +1,100 @@
+<nav class="w-full max-w-7xl mx-auto">
+    <div class="flex flex-col px-5 py-3">
+        <div class="theme-change-container w-full text-gray-400 font-bold flex flex-row justify-between">
+            <a href="index.html" class="border-name-left-container">
+                <div class="border-right-container w-full flex items-end justify-end">
+                    <div class="w-5 h-5 border-t-4 border-r-4 border-orange-500"></div>
+                </div>
+                <h3 class="side-logo-text text-black dark:text-white font-bold font-mono text-xl">Volkan
+                    Filazi</h3>
+                <div class="border-left-container w-full flex items-start justify-start">
+                    <div class="w-5 h-5 border-b-4 border-l-4 border-orange-500"></div>
+                </div>
+            </a>
+            <div class="flex gap-14 flex-row-reverse px-5 md:flex-row">
+                <div class="flex justify-center items-center relative">
+                    <svg class="nav-items-menu md:hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="3em"
+                        height="3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M3 15h14v-2H3v2zM3 5v2h14V5H3zm0 6h14V9H3v2z" />
+                    </svg>
+                    <ul
+                        class="nav-item-list gap-4 text-black dark:text-white bg-gray-600 md:bg-transparent hidden md:flex absolute md:relative mt-20 top-px p-5 md:mt-0 md:top-[0]">
+                        <li class="cursor-pointer hover:text-orange-500"><a href="#introduction-scroll">Profile</a></li>
+                        <li class="cursor-pointer hover:text-orange-500"><a href="#education-scroll">Education</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-orange-500"><a href="#skills-scroll">Skils</a></li>
+                        <li class="cursor-pointer hover:text-orange-500"><a href="#projects-scroll">Projects</a></li>
+                        <li class="cursor-pointer hover:text-orange-500"><a href="#languages-scroll">Languages</a></li>
+                    </ul>
+                    <ul
+                        class="nav-item-list-phone gap-4 text-black dark:text-white bg-white dark:bg-gray-900 hidden absolute md:relative mt-20 rounded-b border-4 border-t-transparent border-orange-500 top-px p-5 md:mt-0 md:top-[0] md:hidden">
+                        <li class="cursor-pointer"><a href="#introduction-scroll">Profile</a></li>
+                        <li class="cursor-pointer"><a href="#education-scroll">Education</a></li>
+                        <li class="cursor-pointer"><a href="#skills-scroll">Skils</a></li>
+                        <li class="cursor-pointer"><a href="#projects-scroll">Projects</a></li>
+                        <li class="cursor-pointer"><a href="#languages-scroll">Languages</a></li>
+
+                    </ul>
+                </div>
+                <div class="relative flex justify-center items-center">
+                    <div
+                        class="theme-change-items relative flex items-center w-32 justify-center gap-1 cursor-pointer hover:border-2 hover:bg-gray-800 hover:rounded-md hover:duration-300 border-none p-2">
+                        <iconify-icon icon="mdi:cards-outline" width="20" height="20"></iconify-icon>
+                        <span>Theme</span>
+                        <iconify-icon icon="ant-design:arrow-down-outlined" width="20" height="20"></iconify-icon>
+                    </div>
+                    <div
+                        class="dropdown-content hidden absolute bg-base-200 flex-col gap-2 text-base-content mt-20 top-0 w-40 overflow-y-auto shadow-2xl bg-white dark:bg-gray-900 p-2 rounded-b border-4 border-t-transparent border-orange-500">
+                        <button
+                            class="cursor-pointer white-white-container flex justify-between items-center bg-black p-2 gap-1 rounded-lg border-2 border-transparent focus:border-white">
+                            <div class="white-contaier">
+                                <p>Light</p>
+                            </div>
+                            <div class="colors-white-white-container items-center flex gap-1">
+                                <div class="w-5 h-2 bg-white "></div>
+                                <div class="w-2 h-5 bg-white "></div>
+                            </div>
+                        </button>
+                        <button
+                            class="cursor-pointer black-black-container flex justify-between items-center bg-black p-2 gap-1 rounded-lg border-2 border-transparent focus:border-white">
+                            <div class="black-contaier">
+                                <p>Dark</p>
+                            </div>
+                            <div class="colors-black-black-container items-center flex gap-1">
+                                <div class="w-5 h-2 bg-gray-900 border-2 "></div>
+                                <div class="w-2 h-5 bg-gray-900 border-2 "></div>
+                            </div>
+                        </button>
+                        <button onclick="matrixGreen()"
+                            class="cursor-pointer matrix-green-container flex justify-between items-center bg-black p-2 gap-1 rounded-lg border-2 border-transparent focus:border-white">
+                            <div class="">
+                                <p>Matrix</p>
+                            </div>
+                            <div class=" items-center flex gap-1">
+                                <div class="w-2 h-5 bg-green-500 rounded-lg "></div>
+                            </div>
+                        </button>
+                        <button onclick="matrixRed()"
+                            class="cursor-pointer matrix-red-container flex justify-between items-center bg-black p-2 gap-1 rounded-lg border-2 border-transparent focus:border-white">
+                            <div class="">
+                                <p>Matrix</p>
+                            </div>
+                            <div class="items-center flex gap-1">
+                                <div class="w-2 h-5 bg-red-500 rounded-lg "></div>
+                            </div>
+                        </button>
+                        <button onclick="matrixOrange()"
+                            class="cursor-pointer matrix-orange-container flex justify-between items-center bg-black p-2 gap-1 rounded-lg border-2 border-transparent focus:border-white">
+                            <div class="">
+                                <p>Matrix</p>
+                            </div>
+                            <div class="items-center flex gap-1">
+                                <div class="w-2 h-5 bg-orange-500 rounded-lg "></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/contact-form.css">
+    <link rel="stylesheet" href="/src/css/title-animations.css">
+    <script src="/src/js/include.js"></script>
+</head>
+
+<body class="">
+    <header class="flex flex-col sticky z-50 top-0 ">
+        <component is="nav.html"
+            class="nav-main-container top-0 z-50 flex w-full border-b-4 border-orange-500 bg-white dark:bg-gray-900">
+        </component>
+    </header>
+    <canvas id="Matrix" class="z-0 fixed top-0 left-0 right-0 bottom-0 min-w-full"></canvas>
+    <main
+        class="mainT w-full flex justify-center relative text-black dark:text-white bg-white dark:bg-gray-800 max-w-7xl mx-auto md:p-7 shadow-md shadow-black gap-2">
+        <div class="flex flex-col w-full">
+            <div class="flex justify-center flex-col">
+                <div id="introduction-scroll" class="w-full pt-10 scroll-m-24">
+                    <component is="introduction.html"></component>
+                </div>
+                <div id="education-scroll" class="w-full my-10 md:my-15 scroll-m-24 p-2">
+                    <div class="w-full p-3">
+                        <div class="w-full flex flex-col lg:flex-row gap-10">
+                            <div
+                                class="education-main-container flex flex-col text-black dark:text-white light-theme-white">
+                                <div>
+                                    <div class="titleEfect flex items-center justify-center text-4xl">
+                                        <iconify-icon icon="fa6-solid:graduation-cap" width="48" height="48"></iconify-icon>
+                                        EDUCATION
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-main-container flex flex-col text-black dark:text-white light-theme-white">
+                                <div>
+                                    <div class="titleEfect flex items-center justify-center text-4xl">
+                                        <iconify-icon icon="ic:outline-work" width="48" height="48"></iconify-icon>
+                                        WORK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-orange-500">
+                <div id="skills-scroll" class="w-full my-10 md:my-15 scroll-m-24 p-2">
+                    <div class="flex w-full items-center justify-center">
+                        <div class="flex justify-center items-center">
+                            <div class="border-[1px] w-5 h-5 rounded-full p-2 border-gray-700"></div>
+                            <div
+                                class="social-media-ping flex justify-center items-center w-3 h-3 absolute bg-orange-500 opacity-75 animate-ping z-10 rounded-full text-black dark:text-white">
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] grow border-gray-700"></div>
+                        <div>
+                            <div class="titleEfect flex items-center justify-center text-3xl md:text-4xl">
+                                <iconify-icon icon="mdi:arm-flex-outline" width="48" height="48"></iconify-icon>
+                                SKILLS
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] grow  border-gray-700"></div>
+                        <div class="flex justify-center items-center">
+                            <div class="border-[1px] w-5 h-5 rounded-full p-2 border-gray-700"></div>
+                            <div
+                                class="social-media-ping flex justify-center items-center w-3 h-3 absolute bg-orange-500 opacity-75 animate-ping z-10 rounded-full text-black dark:text-white">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div id="skills-main-animation" class="hidden w-full"></div>
+                        <div class="skills-main-container grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-2 mt-2">
+                        </div>
+                    </div>
+                </div>        
+                <div id="projects-scroll" class="w-full my-10 md:my-15 scroll-m-24 p-2">
+                    <div class="flex flex-col w-full">
+                        <div class="flex w-full items-center">
+                            <div class="flex justify-center items-center">
+                                <div class="border-[1px] w-5 h-5 rounded-full p-2 border-gray-700"></div>
+                                <div
+                                    class="social-media-ping flex justify-center items-center w-3 h-3 absolute bg-orange-500 opacity-75 animate-ping z-10 rounded-full text-black dark:text-white">
+                                </div>
+                            </div>
+                            <div class="border-b-[1px] w-full border-gray-700"></div>                     
+                            <div>
+                                <div class="titleEfect flex items-center justify-center text-4xl">
+                                    <iconify-icon icon="file-icons:microsoft-project" width="48" height="48"></iconify-icon>
+                                    PROJECTS
+                                </div>
+                            </div>
+                            <div class="border-b-[1px] w-full border-gray-700"></div>
+                            <div class="flex justify-center items-center">
+                                <div class="border-[1px] w-5 h-5 rounded-full p-2 border-gray-700"></div>
+                                <div
+                                    class="social-media-ping flex justify-center items-center w-3 h-3 absolute bg-orange-500 opacity-75 animate-ping z-10 rounded-full text-black dark:text-white">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-buttons-container justify-between items-center flex mt-5 gap-2">
+                        </div>
+                        <div class="projects-main grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 mt-5 "></div>
+                    </div>
+                </div>
+                <div id="languages-scroll" class="w-full my-10 md:my-15 scroll-m-24 p-2">
+                    <div class="flex w-full items-center">
+                        <div class="flex justify-center items-center">
+                            <div class="border-[1px] w-5 h-5 rounded-full p-2 border-gray-700"></div>
+                            <div
+                                class="social-media-ping flex justify-center items-center w-3 h-3 absolute bg-orange-500 opacity-75 animate-ping z-10 rounded-full text-black dark:text-white">
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] grow border-gray-700"></div>
+                        <div>
+                            <div class="titleEfect flex items-center justify-center text-3xl md:text-4xl">
+                                <iconify-icon icon="material-symbols:language" width="48" height="48"></iconify-icon>
+                                LANGUAGES
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] grow border-gray-700"></div>
+                        <div class="flex justify-center items-center">
+                            <div class="border-[1px] w-5 h-5 rounded-full p-2 border-gray-700"></div>
+                            <div
+                                class="social-media-ping flex justify-center items-center w-3 h-3 absolute bg-orange-500 opacity-75 animate-ping z-10 rounded-full text-black dark:text-white">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="main-languages-container flex items-center text-white justify-between w-full flex-wrap gap-2 p-3">
+                    </div>
+                </div>
+               
+                <div id="contact-form-scroll" class="w-full my-10 md:my-15 scroll-m-24 p-2">
+                    <component is="contactForm.html"></component>
+                </div>
+            </div>
+        </div>
+        <div class="share-modal fixed hidden justify-center items-center top-0 left-0 right-0 bottom-0 z-50">
+            <div class="close-share-modal absolute w-full h-full bg-black opacity-30"></div>        
+        </div>
+    </main>
+    <footer>
+        <div id="bottom-navbar" class="w-full relative">
+            <component is="bottomNavbar.html"
+                class="footer-container bottom-0 z-50 flex w-full border-t-4 border-orange-500 bg-white dark:bg-gray-900">
+            </component>
+        </div>
+    </footer>
+    <script>includeHTML();</script>
+</body>
+
+<script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+<script src="/src/js/eduwork.js"></script>
+<script src="/src/js/matrix.js"></script>
+<script src="/src/js/skills.js"></script>
+<script src="/src/js/contactForm.js"></script>
+<script src="/src/js/projects.js"></script>
+<script src="/src/js/languages-progress.js"></script>
+<script src="/src/js/theme.js"></script>
+<script src="/src/js/app.js"></script>
+</html>
